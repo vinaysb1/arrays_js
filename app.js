@@ -38,7 +38,18 @@ function add(item) {
     return item + 5;
 }
 console.log(num5.map(add));
-
-const num6 = [2,4,6,8,10];
-multliply = num6 => num6*5;
+// map() method using arrow
+const num6 = [2, 4, 6, 8, 10];
+multliply = num6 => num6 * 5;
 console.log(num6.map(multliply));
+// Filter() Method
+const num7 = [5, 8, 10, 12, 13, 11, 14];
+checkEven = num7 => num7 % 2 === 0;
+EvenNo = num7.filter(checkEven);
+console.log(EvenNo);
+// reduce() Method
+const num8 = [1,8,5,6,7,4];
+totSum = (acc,cur) => acc+cur;
+sum = num8.reduce(totSum);
+console.log(num8);
+console.log(sum);
