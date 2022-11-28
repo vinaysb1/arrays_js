@@ -74,3 +74,13 @@ for (let profile of emp1) {
     console.log(profile.age);
     console.log(profile.name);
 }
+//forEach() loop
+const emp2 = [
+    { id: 1, name: "vin", age: 30, dep: "me" },
+    { id: 2, name: "san", age: 31, dep: "me" },
+    { id: 3, name: "Naveen", age: 28, dep: "cs" },
+    { id: 4, name: "guru", age: 22, dep: "cv" }
+];
+emp2.forEach(function(profile,i,emp2){
+    console.log(`index:${i},Name:${profile.name}`);
+});
