@@ -48,8 +48,29 @@ checkEven = num7 => num7 % 2 === 0;
 EvenNo = num7.filter(checkEven);
 console.log(EvenNo);
 // reduce() Method
-const num8 = [1,8,5,6,7,4];
-totSum = (acc,cur) => acc+cur;
+const num8 = [1, 8, 5, 6, 7, 4];
+totSum = (acc, cur) => acc + cur;
 sum = num8.reduce(totSum);
 console.log(num8);
 console.log(sum);
+//for loop for array of objects
+const emp = [
+    { id: 1, name: "vinay", age: 32 },
+    { id: 2, name: "sanjay", age: 33 },
+    { id: 3, name: "Naveen", age: 28 },
+    { id: 4, name: "guru", age: 22 },
+];
+for (let i = 0; i < emp.length; i++) {
+    console.log(emp[i].name);
+}
+//for/of loop for array of objects
+const emp1 = [
+    { id: 1, name: "vinay", age: 32, dep: "me" },
+    { id: 2, name: "sanjay", age: 33, dep: "me" },
+    { id: 3, name: "Naveen", age: 28, dep: "cs" },
+    { id: 4, name: "guru", age: 22, dep: "cv" }
+];
+for (let profile of emp1) {
+    console.log(profile.age);
+    console.log(profile.name);
+}
