@@ -107,3 +107,16 @@ while(i<emp4.length){
     console.log(emp4[i].name);
     i++;
 }
+// do while() loop
+const emp5 = [
+    { id: 1, name: "vinay", age: 32, dep: "me" },
+    { id: 2, name: "sanjay", age: 33, dep: "me" },
+    { id: 3, name: "Naveen", age: 28, dep: "cs" },
+    { id: 4, name: "guru", age: 22, dep: "cv" }
+];
+var i=0;
+do{
+    console.log(emp5[i].age)
+    i++;
+}
+while(i<emp5.length);
