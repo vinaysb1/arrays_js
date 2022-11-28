@@ -81,6 +81,29 @@ const emp2 = [
     { id: 3, name: "Naveen", age: 28, dep: "cs" },
     { id: 4, name: "guru", age: 22, dep: "cv" }
 ];
-emp2.forEach(function(profile,i,emp2){
+emp2.forEach(function (profile, i, emp2) {
     console.log(`index:${i},Name:${profile.name}`);
 });
+//forEach() loop exmple-2
+const emp3 = [
+    { id: 1, name: "aarush", age: 3, year: 2019 },
+    { id: 2, name: "vinush", age: 2, year: 2020 },
+    { id: 3, name: "usha", age: 4, year: 2018 },
+    { id: 4, name: "vidya", age: 5, year: 2017 },
+];
+emp3.forEach((profile, index, emp3) => this.myFunction(profile, index, emp3));
+myFunction = (profile, index, emp3) => {
+    console.log(emp3);
+}
+//while() loop
+const emp4 = [
+    { id: 1, name: "aarush", age: 3, year: 2019 },
+    { id: 2, name: "vinush", age: 2, year: 2020 },
+    { id: 3, name: "usha", age: 4, year: 2018 },
+    { id: 4, name: "vidya", age: 5, year: 2017 },
+];
+var i=0;
+while(i<emp4.length){
+    console.log(emp4[i].name);
+    i++;
+}
