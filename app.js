@@ -50,9 +50,9 @@ console.log(EvenNo);
 // reduce() Method
 const num8 = [1, 8, 5, 6, 7, 4];
 totSum = (acc, cur) => acc + cur;
-sum = num8.reduce(totSum);
+sum1 = num8.reduce(totSum);
 console.log(num8);
-console.log(sum);
+console.log(sum1);
 //for loop for array of objects
 const emp = [
     { id: 1, name: "vinay", age: 32 },
@@ -175,7 +175,7 @@ for(let i=0;i<array.length;i++){
 console.log(even);
 console.log(odd);
 
-To print min,max numbers using for loop
+// To print min,max numbers using for loop
 const num15 = [67, 56, 21, 3, 45, 89, 2, 90];
 let min = num15[0];
 for (let i = 0; i < num15.length; i++) {
@@ -192,41 +192,8 @@ for (let i = 0; i < num15.length; i++) {
 }
 console.log(max); 
 
-let arr1 = [0,1,0,1,0,1,0,0,1,2,2,2];
-let arr2 = [0,0,3,2,1,1,2,2,0,1,0,1];
-const getData = (arrs) => {
-    let res = {}
-    for (let i=0;i<arrs.length;i++){
-        if(res[arrs[i]==undefined])
-        {res[arrs[i]]=1}
-        else {res[arrs[i]]++}
-    }
-    for (const property in res){
-        console.log(`${property}:${res[property]}`);
-    }
-}
-console.log (getData(arr1));
 
-console.log (getData(arr2));
-
-let arr1 = [0, 0, 0, 0, 2, 3, 1, 2, 3, 0, 1, 2, 2];
-let arr2 = [0, 0, 4, 8, 2, 3, 1, 2, 3, 0, 1, 2, 2];
-
-const getData = (arrs) => {
-    let res = {}
-    for (let i = 0; i < arrs.length; i++) {
-        if (res[arrs[i]] == undefined) { res[arrs[i]] = 1; }
-        else { res[arrs[i]]++ }
-    }
-    for (const property in res) {
-      console.log(`${property}: ${res[property]}`);
-    }
-}
-
-getData(arr1)
-getData(arr2)
-
-print 0 and 1 with in the array
+// print 0 and 1 with in the array
 let num16 = [0,1,0,1,1,1,0,0];
 var zero = 0;
 var ones = 1;
@@ -241,8 +208,8 @@ for(i=0;i<num16.length;i++){
 console.log(zero);
 console.log(ones);
 
-count the numbers with in the array 
-const num17 = [0,1,2,1,2,3,3,1,0,1,2];
+//count the total number of item repeated in a array
+const num17 = [0,1,1,1,0,1,2,3,1,2,1,0,1,0,3,3];
 let count0 = 0;
 let count1 = 1;
 let count2 = 2;
@@ -251,14 +218,12 @@ for(i=0;i<num17.length;i++){
     if(num17[i]==0){
         count0++;
     }
-    if(num17[i]==1){
+    else if(num17[i]==1){
         count1++;
     }
-    if(num17[i]==2){
+    else if(num17[i]==2){
         count2++;
-    }
-    if(num17[i]==3){
-        count3++;
-    }
 }
-console.log(count0,count1,count2,count3);
+      else count3++;
+}
+console.log(count0,count1,count2,count3);      
