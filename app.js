@@ -120,3 +120,145 @@ do{
     i++;
 }
 while(i<emp5.length);
+//map() method
+var myArray = [
+    {id: 1, firstName: "venu", lastName: 'gopal', age: 12},
+    {id: 2, firstName: 'Jane', lastName: 'Brown', age: 14},
+    {id: 3, firstName: 'Martin', lastName: 'loother', age: 13},
+    {id: 4, firstName: 'subhas', lastName: 'bose', age: 17},
+    {id: 5, firstName: 'syam', lastName: 'sundar', age: 11}
+];
+
+var newArray = myArray.map(function(profile, index, myArr) {
+    var newProfile = {
+        'id': index + 1,
+        'fullName': profile.firstName + ' ' + profile.lastName,
+        'age': profile.age
+    }
+
+    return newProfile
+})
+
+newArray.forEach(function(profile, index, myArr) {
+    console.log(profile.fullName)
+});
+
+for (let i=0;i<10;i++){
+    console.log("Hello world");
+}
+
+for (let i=1;i<11;i++){
+    console.log(i);
+}
+// print even no's range 0-20 using for loop
+for(let i=0;i<=20;i+=2){
+    console.log(i);
+}
+let sum = 0;
+for(let i=1;i<11;i++){   
+    sum = sum+i;
+    console.log(sum);
+}
+
+const array = [3,6,1,5,9,4,7,10,11];
+const even = [];
+const odd = [];
+for(let i=0;i<array.length;i++){
+    if (i%2==0){
+    even.push(array[i])
+    }
+    else{
+        odd.push(array[i])
+    }
+
+}
+console.log(even);
+console.log(odd);
+
+To print min,max numbers using for loop
+const num15 = [67, 56, 21, 3, 45, 89, 2, 90];
+let min = num15[0];
+for (let i = 0; i < num15.length; i++) {
+    if (num15[i] < min) {
+        min = num15[i]
+    }
+}
+console.log(min);
+let max = num15[0];
+for (let i = 0; i < num15.length; i++) {
+    if (num15[i] > max) {
+        max = num15[i]
+    }
+}
+console.log(max); 
+
+let arr1 = [0,1,0,1,0,1,0,0,1,2,2,2];
+let arr2 = [0,0,3,2,1,1,2,2,0,1,0,1];
+const getData = (arrs) => {
+    let res = {}
+    for (let i=0;i<arrs.length;i++){
+        if(res[arrs[i]==undefined])
+        {res[arrs[i]]=1}
+        else {res[arrs[i]]++}
+    }
+    for (const property in res){
+        console.log(`${property}:${res[property]}`);
+    }
+}
+console.log (getData(arr1));
+
+console.log (getData(arr2));
+
+let arr1 = [0, 0, 0, 0, 2, 3, 1, 2, 3, 0, 1, 2, 2];
+let arr2 = [0, 0, 4, 8, 2, 3, 1, 2, 3, 0, 1, 2, 2];
+
+const getData = (arrs) => {
+    let res = {}
+    for (let i = 0; i < arrs.length; i++) {
+        if (res[arrs[i]] == undefined) { res[arrs[i]] = 1; }
+        else { res[arrs[i]]++ }
+    }
+    for (const property in res) {
+      console.log(`${property}: ${res[property]}`);
+    }
+}
+
+getData(arr1)
+getData(arr2)
+
+print 0 and 1 with in the array
+let num16 = [0,1,0,1,1,1,0,0];
+var zero = 0;
+var ones = 1;
+for(i=0;i<num16.length;i++){
+    if(num16[i]==0){
+        zero++;
+    }
+    else {
+        ones++;
+    }
+}
+console.log(zero);
+console.log(ones);
+
+count the numbers with in the array 
+const num17 = [0,1,2,1,2,3,3,1,0,1,2];
+let count0 = 0;
+let count1 = 1;
+let count2 = 2;
+let count3 = 3;
+for(i=0;i<num17.length;i++){
+    if(num17[i]==0){
+        count0++;
+    }
+    if(num17[i]==1){
+        count1++;
+    }
+    if(num17[i]==2){
+        count2++;
+    }
+    if(num17[i]==3){
+        count3++;
+    }
+}
+console.log(count0,count1,count2,count3);
