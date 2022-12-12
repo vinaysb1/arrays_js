@@ -227,3 +227,11 @@ for(i=0;i<num17.length;i++){
       else count3++;
 }
 console.log(count0,count1,count2,count3);      
+
+//for in loop example
+const stu = {name:"vinay",age:35,class:8}
+for(let key in stu){
+    console.log(`${key}: => ${stu[key]}`);
+}
+
+
