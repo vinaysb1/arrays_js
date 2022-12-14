@@ -251,4 +251,14 @@ function pivotIndex(arr) {
 }
 console.log(pivotIndex(arr2));
 
-
+// array methods with simple example
+let fruits = ["mango","orange","kiwi"]
+console.log(fruits);
+fruits.push("banana");
+console.log(fruits);
+fruits.pop();
+console.log(fruits);
+fruits.shift();
+console.log(fruits);
+fruits.unshift("pappaya")
+console.log(fruits);
