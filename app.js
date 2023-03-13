@@ -325,3 +325,20 @@ const employee = {
 
 console.log(employee); // { id: 1, name: 'Shrihari', salary: 100000 }
 
+// 10. Use Array.some to check occurrence in array
+
+const assets2 = [
+    { course: "LLD of Splitwise", type: "video", link: "https://youtu.be/I4xf4STXgmU" },
+    { course: "LLD of Parking", type: "blog", link: "https://medium.com/@abhigulve06/parking-lot-low-level-design-in-java-2be46101daec" }
+]
+
+const hasVideoAsset = assets2.some(asset => asset.type === "video");
+console.log(hasVideoAsset); // true
+
+// 11. Readable numbers
+
+const largeNumber = 35_00_00_000;
+console.log(largeNumber); // 350000000
+
+const largeNumber2 = 65e8;
+console.log(largeNumber2); // 6500000000
